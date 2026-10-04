@@ -5,7 +5,7 @@
 
 FLOURITE_KERNEL_PREBUILT := device/xiaomi/flourite-kernel
 
-# Exact boot artifacts from OS3.0.304.0.WPRMIXM.  Keep this as the default
+# Exact boot artifacts from OS3.0.306.0.WPRMIXM.  Keep this as the default
 # until every Xiaomi/Qualcomm external module needed by the OSS kernel is
 # available and can be built against the same KMI.
 TARGET_PREBUILT_KERNEL := $(FLOURITE_KERNEL_PREBUILT)/Image
@@ -39,4 +39,3 @@ BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := \
     $(strip $(shell cat $(FLOURITE_KERNEL_PREBUILT)/modules.load.recovery))
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := \
     $(FLOURITE_KERNEL_PREBUILT)/modules.blocklist
-
